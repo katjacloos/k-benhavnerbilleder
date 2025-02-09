@@ -3,18 +3,51 @@ import MainLayout from "../layouts/MainLayout.astro";
 import Button from "../components/Button.astro";
 import Link from "../components/Link.astro";
 import { Image } from "astro:assets";
-import thumbsup from "../assets/images/thumbsup.png";
 ---
 
 <MainLayout title="Titel">
-  <article>
-    <h1>Index overskrift</h1>
-    <Button>Klik!</Button>
+  <section class="grid md:grid-cols-2 border-8 border-black lg:mt-32">
+    <div class="">
+      <img
+        src="./assets/images/bogen/kobenhavnerbilleder-stens-simons.jpg"
+        alt=""
+      />
+    </div>
+    <div
+      class="text-4xl p-8 grid content-center bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90%"
+    >
+      <p class="pb-8">Københavnerbilleder - en guide til hipster foto</p>
+      <p>af Sten Simons</p>
+      <div class="">
+        <label class="text-xl" for="email">Hent prøvekapitel</label>
+        <input type="text" id="adresse" placeholder="anders@andeby.com" />
+      </div>
+      <Button variant="primary" size="medium">Afsend</Button>
+
+      <p class="text-xl">
+        *Jeg accepterer at modtage prøvekapitlet og modtage markedsføring om
+        bogen ved at downloade prøvekapitlet.
+      </p>
+    </div>
+  </section>
+  <section>
     <p>
-      Link til <Link href="https://www.kea.dk" target="_blank"
-        >En anden side</Link
-      >
+      Københavnerbilleder er de danske streetfotografers bibel: Det er en fusion
+      mellem et kunstværk og en lærebog. Bogen gennemgår alle væsentlige
+      aspekter af streetfotografering fra grundlæggende teknik til kreative
+      eksperimenter. Alt sammen krydret med masser af inspirerende fotos. God
+      læselyst!
     </p>
-    <Image src={thumbsup} alt="" />
-  </article>
+    <p>
+      Titel: Københavnerbilleder - en guide til hipster foto Forfatter: Sten
+      Simons Antal sider: 344 Forlag: Mellem Linjerne ISBN: 987-6-987654-32-1
+      Pris: 399.-
+    </p>
+  </section>
+
+  <section></section>
+
+  <Link variant="primary" size="medium" href="#tilmelding"
+    >Tilmeld dig til kurset!</Link
+  >
 </MainLayout>

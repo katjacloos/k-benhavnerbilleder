@@ -19,7 +19,7 @@ import { Image } from "astro:assets";
         Københavnerbilleder - en guide til hipster foto
       </h1>
       <h2 class="text-2xl font-bold">af Sten Simons</h2>
-      <div class="">
+      <div class="pt-5">
         <input type="text" id="adresse" placeholder="anders@andeby.com" />
         <label class="text-xl" for="email"
           ><Button variant="primary" size="medium">Hent prøvekapitel</Button
@@ -27,13 +27,13 @@ import { Image } from "astro:assets";
         >
       </div>
 
-      <p class="">
+      <p class="p-4 pr-10 text-xs">
         *Jeg accepterer at modtage prøvekapitlet og modtage markedsføring om
         bogen ved at downloade prøvekapitlet.
       </p>
     </div>
   </section>
-  <section class="grid grid-cols-1 lg:grid-cols-2 mx-auto mt-4 gap-8">
+  <section class="grid grid-cols-1 lg:grid-cols-2 mx-8 m-10 gap-8">
     <p>
       Københavnerbilleder er de danske streetfotografers bibel: Det er en fusion
       mellem et kunstværk og en lærebog. Bogen gennemgår alle væsentlige
@@ -41,11 +41,14 @@ import { Image } from "astro:assets";
       eksperimenter. Alt sammen krydret med masser af inspirerende fotos. God
       læselyst!
     </p>
-    <p>
-      Titel: Københavnerbilleder - en guide til hipster foto Forfatter: Sten
-      Simons Antal sider: 344 Forlag: Mellem Linjerne ISBN: 987-6-987654-32-1
-      Pris: 399.-
-    </p>
+    <div>
+      <p>Titel: Københavnerbilleder - en guide til hipster foto</p>
+      <p>Forfatter: Sten Simons</p>
+      <p>Antal sider: 344</p>
+      <p>Forlag: Mellem Linjerne</p>
+      <p>ISBN: 987-6-987654-32-1</p>
+      <p>Pris: 399.-</p>
+    </div>
   </section>
 
   <section class="mt-32 grid lg:grid-cols-3 mx-auto gap-4 items-center">
@@ -70,7 +73,9 @@ import { Image } from "astro:assets";
   </section>
 
   <section class="mt-32" id="bogenskapitler">
-    <h2 class="text-4xl font-bold">Bogens kapitler</h2>
+    <h2 class="p-2 my-8 text-4xl font-bold border-t-2 border-b-2 border-black">
+      Bogens kapitler
+    </h2>
     <div class="grid grid-cols-1 lg:grid-cols-2 mx-auto mt-4 gap-8">
       <article class="prose">
         <h3 class="text-xl">Kapitel 1 - Intro til street foto</h3>
@@ -151,7 +156,9 @@ import { Image } from "astro:assets";
   </section>
 
   <section class="mt-32" id="anmeldelserafbogen">
-    <h2 class="text-4xl font-bold">Anmeldelser af bogen</h2>
+    <h2 class="p-2 my-8 text-4xl font-bold border-t-2 border-b-2 border-black">
+      Anmeldelser af bogen
+    </h2>
     <div class="grid grid-cols-1 lg:grid-cols-3 mx-auto mt-4 gap-8">
       <article class="prose">
         <h3 class="text-xl">5 af 6 stjerner</h3>
@@ -185,8 +192,10 @@ import { Image } from "astro:assets";
   </section>
 
   <section id="galleri" class="my-32">
-    <h2 class="text-4xl font-bold">Galleri - Billeder af bogen</h2>
-    <div class="columns-2 lg:columns-4">
+    <h2 class="p-2 my-4 text-4xl font-bold border-t-2 border-b-2 border-black">
+      Galleri - Billeder af bogen
+    </h2>
+    <div class="grid grid-cols-2 lg:grid-cols-4 mx-auto mt-4 gap-8">
       <img
         src="../../src/assets/images/billeder fra bogen/lomo-smena-17.jpg"
         alt="Københavnerbilleder - side"
@@ -197,10 +206,6 @@ import { Image } from "astro:assets";
       />
       <img
         src="../../src/assets/images/billeder fra bogen/2.jpg"
-        alt="Københavnerbilleder - side"
-      />
-      <img
-        src="../../src/assets/images/billeder fra bogen/4.jpg"
         alt="Københavnerbilleder - side"
       />
       <img
@@ -217,6 +222,11 @@ import { Image } from "astro:assets";
       />
       <img
         src="../../src/assets/images/billeder fra bogen/35mm-film-2-5.jpg"
+        alt="Københavnerbilleder - side"
+      />
+
+      <img
+        src="../../src/assets/images/billeder fra bogen/le-box-3.jpg"
         alt="Københavnerbilleder - side"
       />
       <img
@@ -236,10 +246,6 @@ import { Image } from "astro:assets";
         alt="Københavnerbilleder - side"
       />
       <img
-        src="../../src/assets/images/billeder fra bogen/le-box-3.jpg"
-        alt="Københavnerbilleder - side"
-      />
-      <img
         src="../../src/assets/images/billeder fra bogen/le-box-11.jpg"
         alt="Københavnerbilleder - side"
       />
@@ -254,7 +260,9 @@ import { Image } from "astro:assets";
     id="underviseren"
     class="grid lg:grid-cols-2 mt-32 max-w-3xl mx-auto gap-6"
   >
-    <h2 class="text-4xl font-bold">Forfatteren</h2>
+    <h2 class="p-2 my-4 text-4xl font-bold border-t-2 border-b-2 border-black">
+      Forfatteren
+    </h2>
 
     <h2></h2>
     <div>
